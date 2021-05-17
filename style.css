@@ -1,4 +1,17 @@
 h1 {
     font-size: 14px;
-    color:#033980
+    color:#033980;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.submitbutton{
+    background-color: bisque;
+    font: 15px;
+    color:cadetblue
+}
+
+.bannerimg {
+width: 500px;
+height:500px;
+position:absolute;
 }
