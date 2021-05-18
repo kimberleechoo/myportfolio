@@ -1,17 +1,43 @@
 h1 {
     font-size: 14px;
     color:#033980;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'PT Serif';
+   
 }
 
 .submitbutton{
-    background-color: bisque;
     font: 15px;
-    color:cadetblue
+    color:cadetblue;
+    font-family: 'Roboto';
 }
 
 .bannerimg {
-width: 500px;
-height:500px;
-position:absolute;
+width: 1000px;
+height: 600px;
+display:block; 
+margin-left:auto;
+margin-right:auto;
+}
+
+@media (max-width:350px){
+  .bannerimg {
+      width:200px;
+      height:400px;
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+  }
+
+  .submitbutton{
+      font:10px;
+      color:red;
+  }
+
+  h1{
+      color:yellow;
+      font-size:20px;
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+  }
 }

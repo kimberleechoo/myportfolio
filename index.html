@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is my portfolio!</title>
+
+    <!--Fonts
+    1. PT Serif 
+    2. Roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--CSS-->   
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+
 </head>
 <body>
-    <h1>hello world :)</h1>
-    <input type="text">
-    type anything here ! </input>
-    <button class="submitbutton">Submit your queries!</button>
-    <img class = "bannerimg" src="assets/bannerBG.jpg" alt="banner"> picture is showing 
+    <div>
+        <img class = "bannerimg" src="assets/bannerBG.jpg" alt="banner"> 
+        </div>
+    <div><h1>Kimberlee Choo</h1></div>
+    <section id="submitQueries">
+    <input type="text" v-model = "userName">
+    <p> what is your name? </p>
+    </hr>
+    <p>Hello {{userName}}</p>
+    <div> <input type="text" placeholder="questions?"></input>
+    <button v-on:click.prevent = "submitButton" class="submitbutton" >Submit your queries!</button></div>
+    </section>
 
 </body>
 </html>
